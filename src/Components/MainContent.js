@@ -26,7 +26,6 @@ function MainContent() {
     return (
 
         <div className="flex justify-center flex-col">
-            {/*introduzione*/}
             <div className="background-gif min-h-[calc(100vh-56px)] container mx-auto relative flex flex-col items-center justify-center  lg:pt-0 ">
                 <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
                     <button onClick={() => handleClick(section1Ref)} className="button-hidden border-2 bg-slate-900 border-slate-950 w-10 h-10 rounded-full text-2xl animate-bounce text-white">
@@ -47,7 +46,6 @@ function MainContent() {
 
             </div>
 
-            {/* anteprima primo progetto fooder*/}
             <div ref={section1Ref} className="container min-h-screen d:min-h-0 mx-auto relative flex  items-center justify-center lg:pt-20 lg:pt-0">
                 <div className="absolute top-4 left-1/2 transform -translate-x-1/2">
                     <button onClick={ScrollTop} className='button-hidden border-2 bg-slate-900 border-slate-950 w-10 h-10 rounded-full text-2xl animate-bounce text-white'>
@@ -91,7 +89,6 @@ function MainContent() {
                 </div>
             </div>
 
-            {/* anteprima primo progetto gamecreator*/}
             <div ref={section2Ref} className="container min-h-screen mx-auto relative flex  items-center justify-center pb-40 background-gif-gifts">
                 <div className="absolute top-3 left-1/2 transform -translate-x-1/2">
                     <button onClick={() => handleClick(section1Ref)} className='button-hidden border-2 bg-slate-900 border-slate-950 w-10 h-10 rounded-full text-2xl animate-bounce text-white'>
