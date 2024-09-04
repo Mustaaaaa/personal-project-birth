@@ -20,15 +20,19 @@ function Navbar() {
                         Home
                         <span className={`absolute bottom-0 w-full h-1 bg-yellow-500 transition-transform duration-300 ${location.pathname === '/' ? 'scale-x-100' : 'scale-x-0'} group-hover:scale-x-100`}></span>
                     </Link>
-                    <Link to="/AboutMe" className="relative group h-16 px-10 flex items-center justify-center hover:text-yellow-500 hover:bg-gray-100 transition-all duration-300">
+                    <Link to="/Foto" className="relative group h-16 px-10 flex items-center justify-center hover:text-yellow-500 hover:bg-gray-100 transition-all duration-300">
                         Foto
+                        <span className={`absolute bottom-0 w-full h-1 bg-yellow-500 transition-transform duration-300 ${location.pathname === '/AboutMe' ? 'scale-x-100' : 'scale-x-0'} group-hover:scale-x-100`}></span>
+                    </Link>
+                    <Link to="/Texts" className="hidden relative group h-16 px-10 flex items-center justify-center hover:text-yellow-500 hover:bg-gray-100 transition-all duration-300">
+                        Testi
                         <span className={`absolute bottom-0 w-full h-1 bg-yellow-500 transition-transform duration-300 ${location.pathname === '/AboutMe' ? 'scale-x-100' : 'scale-x-0'} group-hover:scale-x-100`}></span>
                     </Link>
                 </div>
 
-                <div className='group transition hidden md:block'>
+                <div className='group transition hidden md:block w-40'>
                     <button onClick={toggleDropdown}
-                        className='h-8 bg-yellow-500 rounded-2xl px-6 flex justify-center items-center 
+                        className='hidden h-8 bg-yellow-500 rounded-2xl px-6 flex justify-center items-center 
                     mr-10 hover:bg-gray-950 group-hover:text-white duration-500 animate-pulse'>
                         Contattami
                     </button>

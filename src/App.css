@@ -4,3 +4,19 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.background-gif-gifts{
+  background-image: url('../src/Assets/gifts.gif');
+  background-size: 20%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.swiper-slide img {
+  border-radius: 10px;
+}

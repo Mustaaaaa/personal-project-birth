@@ -2,10 +2,11 @@ import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar'
 import MainContent from './Components/MainContent'
-import AboutMe from './Components/Foto'
-import MyProjects from './Components/MyProjects'
+import Foto from './Components/Foto'
+import Texts from './Components/Texts'
 import { ScrollProvider } from './Components/Assets/ScrollDisable';
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<MainContent />} />
-            <Route path="/aboutme" element={<AboutMe />} />
+            <Route path="/Foto" element={<Foto />} />
+            <Route path="/Texts" element={<Texts />} />
           </Routes>
         </Router>
       </ScrollProvider>

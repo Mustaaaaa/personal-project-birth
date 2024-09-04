@@ -2,10 +2,7 @@ import ScrollFunction from './Assets/scrollFunction.js';
 import ScrollTop from './Assets/ScrollTop.js';
 import React, { useRef, useEffect } from 'react';
 import '../App.css';
-import imgDashboardFooder from '../Assets/fooder/fooder-dashboard-buisness.png';
-import imgHomeGameCreator from '../Assets/gamecreator/home-gamecreator.png';
-import imgProjectsLaravelAuth from '../Assets/laravel-auth/Projects.png';
-import imgMainPageProjectChess from '../Assets/chessacademy/mainpage.png';
+
 import { useScroll } from './Assets/ScrollDisable.js';
 
 
@@ -13,8 +10,6 @@ import { useScroll } from './Assets/ScrollDisable.js';
 function MainContent() {
     const section1Ref = useRef(null);
     const section2Ref = useRef(null);
-    const section3Ref = useRef(null);
-    const section4Ref = useRef(null);
 
     const handleClick = (sectionRef) => {
         ScrollFunction(sectionRef);
@@ -97,15 +92,10 @@ function MainContent() {
             </div>
 
             {/* anteprima primo progetto gamecreator*/}
-            <div ref={section2Ref} className="container min-h-screen mx-auto relative flex  items-center justify-center">
+            <div ref={section2Ref} className="container min-h-screen mx-auto relative flex  items-center justify-center pb-40 background-gif-gifts">
                 <div className="absolute top-3 left-1/2 transform -translate-x-1/2">
                     <button onClick={() => handleClick(section1Ref)} className='button-hidden border-2 bg-slate-900 border-slate-950 w-10 h-10 rounded-full text-2xl animate-bounce text-white'>
                         &#129121;
-                    </button>
-                </div>
-                <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2">
-                    <button onClick={() => handleClick(section3Ref)} className='button-hidden border-2 bg-slate-900 border-slate-950 w-10 h-10 rounded-full text-2xl animate-bounce text-white'>
-                        &#129123;
                     </button>
                 </div>
                 <div className='flex flex-col items-center flex-grow'>
@@ -139,60 +129,21 @@ function MainContent() {
                                 rimane solo quello di roby, vedi tu cosa vuoi fare.
                             </li>
                             <li className='pb-5'>
-                                Come quinto ed ultimo regalo
+                                Come quinto regalo ti ho preso le <strong>McQueen</strong> con i cristalli bianchi (ovviamente non sono le originali, ma ho davvero preso la qualità migliore che c'è in Egitto) che brillano
+                                come brilli te.
+                                <br></br>
+                                P.S. eri stupenda alla tua festa di compleanno, una vera e propria <strong>Regina</strong>.
+                            </li>
+                            <li className='pb-5'>
+                                Come sesto regalo che troverai nella bustina prensente nella scatola delle McQueen, più che regalo è cultura sulla moneta Egiziana. Ti ho portaato tutte le monete(scherzo manca solo la moneta da 1 sterlina che ho perso, è simile a quella da 2 euro)
+                                presenti in Egitto: 50 cent(equaivalgono ad 1 sentesimo qui), 5 sterline(10 centesimi), 10 sterline (20 centesimi), 20 sterline (40 centesimi), 50 sterline (1 euro), 100 sterline (2 euro)
+                                e infine quella da 200 sterline (4 euro).
                             </li>
                             <br className='p-10'></br>
-                            <li className='pb-5'>
-                                Nella prossima pagina troverai tutte le informazioni sui regali, aprili in ordine e solo dopo aver letto prima la parte dedicata ad ogni singolo regalo.
-                            </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-
-            {/* anteprima primo progetto Laravel-auth*/}
-            <div ref={section3Ref} className="container min-h-screen mx-auto relative flex items-center justify-center  pt-20 lg:pt-0">
-
-                <div className="absolute top-3 left-1/2 transform -translate-x-1/2">
-                    <button onClick={() => handleClick(section2Ref)} className='button-hidden border-2 bg-slate-900 border-slate-950 w-10 h-10 rounded-full text-2xl animate-bounce text-white'>
-                        &#129121;
-                    </button>
-                </div>
-
-                <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2">
-                    <button onClick={() => handleClick(section4Ref)} className='button-hidden border-2 bg-slate-900 border-slate-950 w-10 h-10 rounded-full text-2xl animate-bounce text-white'>
-                        &#129123;
-                    </button>
-                </div>
-
-                <div className="flex flex-col items-center lg:flex-row">
-                    <div className="w-full lg:w-2/6 flex flex-col px-5">
-                        <p className="text-4xl md:text-7xl break-all text-pretty">Laravel-auth</p>
-                        <p className="text-md py-5 text-pretty">Laravel-Auth è una web app per la pubblicazione dei progetti di ogni tipo e il salvataggio nel database per poi essere riportati in un progetto Front-end(non ancora sviluppato), sviluppata interamente in solitario presso <a href="https://boolean.careers/" className='hover:text-blue-500 underline visited:text-purple-600'>Boolean</a>. Utilizza Laravel per il backend e include un sistema di autenticazione degli utenti sviluppato autonomamente. Questo progetto evidenzia le competenze nel backend development acquisite durante il corso.</p>
-                    </div>
-
-                    <div className="w-11/12 lg:w-4/6">
-                        <img src={imgProjectsLaravelAuth} className="max-w-full" alt="imgDashboard" />
-                    </div>
-                </div>
-            </div>
-
-            {/* anteprima primo progetto Chess Academy*/}
-
-            <div ref={section4Ref} className="container min-h-screen mx-auto relative flex items-center justify-center  pt-20 lg:pt-0">
-                <div className="absolute top-3 left-1/2 transform -translate-x-1/2">
-                    <button onClick={() => handleClick(section3Ref)} className="button-hidden border-2 bg-slate-900 border-slate-950 w-10 h-10 rounded-full text-2xl animate-bounce text-white">
-                        &#129121;
-                    </button>
-                </div>
-
-                <div className="flex flex-col items-center lg:flex-row">
-                    <div className="w-full lg:w-2/6 flex flex-col px-5">
-                        <p className="text-4xl md:text-7xl break-all text-pretty">Chess Academy</p>
-                        <p className="text-md py-5 text-pretty">Chess Academy è stato il progetto midterm presso <a href="https://boolean.careers/" className='hover:text-blue-500 underline visited:text-purple-600'>Boolean</a>, sviluppato interamente con Vue.js. Questa web app sfrutta le potenzialità di Vue.js per garantire un"esperienza utente fluida e reattiva. Il progetto dimostra le competenze acquisite nel front-end durante il corso.</p>
-                    </div>
-                    <div className="w-11/12 lg:w-4/6">
-                        <img src={imgMainPageProjectChess} className="max-w-full" alt="imgDashboard" />
+                        <p className='pb-5'>
+                            Spero che i regali siano stati di tuo gradimento❤.
+                        </p>
                     </div>
                 </div>
             </div>
