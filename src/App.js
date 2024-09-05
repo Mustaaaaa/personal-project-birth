@@ -7,14 +7,12 @@ import Texts from './Components/Texts'
 import Foto2021 from './Components/foto/Foto2021'
 import Foto2022 from './Components/foto/Foto2022'
 import Foto2024 from './Components/foto/Foto2024'
-import { ScrollProvider } from './Components/Assets/ScrollDisable';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
     <>
-      <ScrollProvider>
         <Router>
           <Navbar />
           <Routes>
@@ -26,7 +24,6 @@ function App() {
             <Route path="/Texts" element={<Texts />} />
           </Routes>
         </Router>
-      </ScrollProvider>
 
     </>
   )

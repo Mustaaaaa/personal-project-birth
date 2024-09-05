@@ -1,9 +1,8 @@
 import ScrollFunction from './Assets/scrollFunction.js';
 import ScrollTop from './Assets/ScrollTop.js';
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import '../App.css';
 
-import { useScroll } from './Assets/ScrollDisable.js';
 
 
 
@@ -14,15 +13,7 @@ function MainContent() {
     const handleClick = (sectionRef) => {
         ScrollFunction(sectionRef);
     };
-    const { setScrollDisabled } = useScroll();
 
-    useEffect(() => {
-        setScrollDisabled(true);
-
-        return () => {
-            setScrollDisabled(false);
-        };
-    }, [setScrollDisabled]);
     return (
 
         <div className="flex justify-center flex-col">

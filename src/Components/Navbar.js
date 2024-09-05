@@ -15,7 +15,7 @@ function Navbar() {
                 <div>
                     <a href="/"><img className='w-40  ml-5' src={logo} alt='logo' /></a>
                 </div>
-                <div className='flex flex-row items-center justify-center hidden md:flex '>
+                <div className='flex flex-row items-center justify-center '>
                     <Link to="/" className="relative group h-16 px-10 flex items-center justify-center hover:text-yellow-500 hover:bg-gray-100 transition-all duration-300">
                         Home
                         <span className={`absolute bottom-0 w-full h-1 bg-yellow-500 transition-transform duration-300 ${location.pathname === '/' ? 'scale-x-100' : 'scale-x-0'} group-hover:scale-x-100`}></span>
