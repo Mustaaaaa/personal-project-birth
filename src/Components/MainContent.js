@@ -132,7 +132,7 @@ function MainContent() {
                                 P.S. eri stupenda alla tua festa di compleanno, una vera e propria <strong>Regina</strong>.
                             </li>
                             <li className='pb-5'>
-                                il sesto regalo che troverai nella bustina presente nella scatola delle McQueen, più che regalo è cultura sulla moneta Egiziana. Ti ho portato tutte le monete(scherzo manca solo la moneta da 1 sterlina che ho perso, è simile a quella da 2 euro)
+                                il sesto regalo lo troverai nella bustina presente nella scatola delle McQueen, più che regalo è cultura sulla moneta Egiziana. Ti ho portato tutte le monete(scherzo manca solo la moneta da 1 sterlina che ho perso, è simile a quella da 2 euro)
                                 presenti in Egitto: 50 cent(1 centesimo ), 5 sterline(10 centesimi), 10 sterline (20 centesimi), 20 sterline (40 centesimi), 50 sterline (1 euro), 100 sterline (2 euro)
                                 e infine quella da 200 sterline (4 euro).
                             </li>
