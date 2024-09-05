@@ -142,7 +142,7 @@ const ImageCarousel = () => {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <p className='pt-10 pl-5'>La nostra prima disavventura insieme, mammaa mia aavevo il cuore in gola</p>
+                    <p className='pt-10 pl-5'>La nostra prima disavventura insieme, mamma mia avevo il cuore in gola</p>
                     <div className='flex justify-center h-[900px] mt-10'>
                         <img src={F21} alt="fe" className="object-cover object-top max-w-[800px] max-h-[800px]" />
                     </div>
